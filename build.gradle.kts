@@ -1,22 +1,15 @@
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
 
 
 repositories {
-    // Use JCenter for resolving dependencies.
     jcenter()
 }
 
 dependencies {
-    // Use JUnit Jupiter API for testing.
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
-
-    // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-
-    // This dependency is used by the application.
     // implementation("com.google.guava:guava:29.0-jre")
     implementation("org.apache.spark:spark-sql_2.12:3.1.1")
 }
